@@ -82,7 +82,7 @@ def iniciar_jogo(dificuldade)
     pontos_ate_agora = 1000
     for tentativa in 1..limite_de_tentativas
     
-    chute = pede_um_numero (chutes, tentativa, limite_de_tentativas)
+    chute = pede_um_numero chutes, tentativa, limite_de_tentativas
     chutes << chute
 
     if verificar_se_acertou numero_secreto, chute
